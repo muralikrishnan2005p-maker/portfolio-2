@@ -30,7 +30,9 @@
                     <h2>I'M MURALI</h2>
                     <h3>SOFTWARE DEVELOPER</h3>
                     <p> Aspiring Software Developer Currently Mastering The Craft Through Hands-On Projects. </p>
-                    <button id="connect"> CONNECT WITH ME </button>
+                    <a href="https://wa.me/9080558499?text=Hi%20Murali">
+                        <button id="connect"> CONNECT WITH ME </button>
+                    </a>
                 </div>
             </section>
         </div>
@@ -114,7 +116,7 @@
         </form>
     </section>
 
-      <footer class="footer">
+    <footer class="footer">
         <p>@ 2026 P.MURALI | All Rights Reserved</p>
 
 
@@ -138,6 +140,39 @@
         </div>
 
     </footer>
+
+
+
+
+    <script>
+
+        const navItems = document.querySelectorAll(".nav li");
+
+        navItems[0].addEventListener("click", () => {
+            document.querySelector("#home").scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+
+        navItems[1].addEventListener("click", () => {
+            document.querySelector("#about").scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+
+        navItems[2].addEventListener("click", () => {
+            document.querySelector("#skills").scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+
+        navItems[4].addEventListener("click", () => {
+            document.querySelector("#contact").scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+
+    </script>
 </body>
 
 </html>
